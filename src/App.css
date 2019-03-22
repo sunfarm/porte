@@ -1,0 +1,25 @@
+.App {
+    background-image: url('texture.svg');
+}
+
+.container {
+    text-align: center;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+}
+
+.App-header {
+    background-image: url('background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+img.rounded {
+    border-radius: 6px;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  }
