@@ -1,6 +1,6 @@
 # Porte
 
-Porte is a simple portfolio site written in React which aims to allow meaningful customization simply by updating a few files:
+Porte is a simple portfolio site built with [React](https://reactjs.org/) and [Bulma](https://bulma.io/documentation/) which aims to allow meaningful customization simply by updating a few files:
 - `info.json`
 - `background.jpg`
 - `favicon.png`
