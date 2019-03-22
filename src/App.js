@@ -52,9 +52,11 @@ class App extends Component {
                     <div className="columns">
                         <div className="column">
                             <div className="box">
+                                {info.github ?
                                 <a className="icon is-pulled-right" href={'https://github.com/' + info.github}>
                                     <img src={faGithub} alt="Github" />
                                 </a>
+                                : ''}
                                 <h1 className="title is-1">{info.fullName}</h1>
                                 <h4 className="subtitle is-4">{info.position}</h4>
 
