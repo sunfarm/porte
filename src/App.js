@@ -14,13 +14,14 @@ const info = require('./info.json');
 const logo = require('./logo.png');
 const image = require('./background.jpg');
 const faGithub = require('./github-brands.svg');
+const defaultTag = info.tags[0];
 
 class App extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            page: info.tags[0],
+            page: defaultTag,
         };
     }
 
@@ -33,7 +34,7 @@ class App extends Component {
             <div className="App">
                 <nav className="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
                     <div className="navbar-brand">
-                        <a className="navbar-item" href={window.location.href}>
+                        <a className="navbar-item" href="#" onClick={(e) => { e.preventDefault(); this.setState({ page: defaultTag }); }}>
                             <img src={logo} alt={info.fullName} />
                         </a>
                     </div>
