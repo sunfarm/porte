@@ -1,6 +1,22 @@
 import React, { Component } from 'react';
 
 export default class Box extends Component {
+
+    checkForLinks = item => {
+        let match = item.match(/((.*)\(([^\]]*)\)\[([^\]]*)\](.*))/);
+        if (match){
+            let link =
+                <a href={match[4]}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    key={item.length}>
+                    {match[3]}
+                </a>
+            item = [this.checkForLinks(match[2]), link, match[5]];
+        }
+        return item
+    };
+
     render() {
         if (this.props.items) {
             return (
@@ -28,6 +44,7 @@ export default class Box extends Component {
                                 );
                             }
                         }
+                        item = this.checkForLinks(item);
                         return (
                             <p key={i}>{item}</p>
                         );
