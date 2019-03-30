@@ -37,3 +37,19 @@ The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
 This project uses free icons from Fontawesome! which are licensed under the CC BY 4.0 license. See [their free license](https://fontawesome.com/license/free) page for more info. Attribution is included in the svg files themselves.
+
+
+# How We Got Here
+How this project was created
+
+```
+npx create-react-app portfolio
+yarn add react-ga
+yarn add node-sass
+yarn add bulma
+
+npm i --save @fortawesome/fontawesome-svg-core \
+  npm i --save @fortawesome/free-solid-svg-icons \
+  npm i --save @fortawesome/react-fontawesome
+```
+renamed portfolio to porte
