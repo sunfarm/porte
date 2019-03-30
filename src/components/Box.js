@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 
 export default class Box extends Component {
+
+    replaceMarkdownLinks = item => {
+        return item.replace(
+            /\[(.*?)]\(((?:https?|www|\/).*?)\)/,
+            "<a href='$2' target='_blank'>$1<a/>"
+        );
+    };
+
     render() {
         if (this.props.items) {
             return (
@@ -29,7 +37,12 @@ export default class Box extends Component {
                             }
                         }
                         return (
-                            <p key={i}>{item}</p>
+                            <p
+                                dangerouslySetInnerHTML={{
+                                    __html: this.replaceMarkdownLinks(item)
+                                }}
+                                key={i}
+                            />
                         );
                     })}
                 </div>
