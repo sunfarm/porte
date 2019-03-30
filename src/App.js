@@ -3,10 +3,6 @@ import Box from './components/Box';
 import ReactGA from 'react-ga';
 import 'bulma';
 import './App.css';
-// import { library } from '@fortawesome/fontawesome-svg-core'
-// import { faCode, faMusic, faGithub } from '@fortawesome/free-solid-svg-icons'
-
-// library.add(faCode, faMusic, faGithub)
 
 ReactGA.initialize(process.env.REACT_APP_GA_ID);
 
