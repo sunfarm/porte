@@ -2,19 +2,11 @@ import React, { Component } from 'react';
 
 export default class Box extends Component {
 
-    checkForLinks = item => {
-        let match = item.match(/((.*)\(([^\]]*)\)\[([^\]]*)\](.*))/);
-        if (match){
-            let link =
-                <a href={match[4]}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    key={item.length}>
-                    {match[3]}
-                </a>
-            item = [this.checkForLinks(match[2]), link, match[5]];
-        }
-        return item
+    replaceMarkdownLinks = item => {
+        return item.replace(
+            /\[(.*?)]\(((?:https?|www|\/).*?)\)/,
+            "<a href='$2' target='_blank'>$1<a/>"
+        );
     };
 
     render() {
@@ -44,9 +36,13 @@ export default class Box extends Component {
                                 );
                             }
                         }
-                        item = this.checkForLinks(item);
                         return (
-                            <p key={i}>{item}</p>
+                            <p
+                                dangerouslySetInnerHTML={{
+                                    __html: this.replaceMarkdownLinks(item)
+                                }}
+                                key={i}
+                            />
                         );
                     })}
                 </div>
