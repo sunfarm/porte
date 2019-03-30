@@ -21,7 +21,7 @@ export default class Box extends Component {
                             if (item.title && item.authors) {
                                 return (
                                     <div key={i}>
-                                        <h5 className="title is-5">{item.title}</h5>
+                                        <h5 className="title is-5"><a href={item.link} target="_blank" rel="noopener noreferrer">{item.title}</a></h5>
                                         <h6 className="subtitle is-6">{item.authors}</h6>
                                         <p></p>
                                     </div>
