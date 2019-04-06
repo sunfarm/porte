@@ -6,8 +6,11 @@ import './App.css';
 
 ReactGA.initialize(process.env.REACT_APP_GA_ID);
 
+const images = require.context('../public/images', true);
+
 const info = require('./info.json');
-const logo = require('./logo.png');
+// const logo = require('./logo.png');
+const logo = images('./logo.png');
 const faGithub = require('./github-brands.svg');
 const defaultTag = info.tags[0];
 
@@ -22,6 +25,7 @@ class App extends Component {
 
     componentDidMount = () => {
         ReactGA.pageview(window.location.pathname + window.location.search);
+        document.title = info.fullName;
     }
 
     render() {
