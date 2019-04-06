@@ -9,6 +9,10 @@
     ],
     "boxes": [
         {
+            "image": "background.jpg",
+            "column": 2
+        },
+        {
             "title": "Skills",
             "tag": "Fitness",
             "paragraph": "I know this stuff",
