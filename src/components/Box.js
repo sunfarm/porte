@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+const images = require.context('../../public/images', true);
+
 export default class Box extends Component {
 
     replaceMarkdownLinks = item => {
@@ -10,6 +12,12 @@ export default class Box extends Component {
     };
 
     render() {
+        if (this.props.image) {
+            const image = images(`./${this.props.image}`);
+            return (
+                <img className="rounded" src={image}></img>
+            );
+        }
         if (this.props.items) {
             return (
                 <div className="box">
