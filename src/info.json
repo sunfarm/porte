@@ -16,7 +16,7 @@
         {
             "title": "Hobbies",
             "tag": "Explorer",
-            "paragraph": "Inser paragraph here",
+            "paragraph": "Insert paragraph here",
             "items": [
                 "First thing",
                 "Second thing",
@@ -62,6 +62,17 @@
                     "title": "Getting Things Done",
                     "authors": "David Allen"
                 }
+            ]
+        },
+        {
+            "title": "Porte",
+            "paragraph": "So how do I use Porte?",
+            "items": [
+                "Fork the repo",
+                "Modify info.json",
+                "Replace the images in ./public/images/",
+                "Detailed instructions available on [Github](https://github.com/sunfarm/porte)",
+                "If this is still a bit too technical for you, open an issue on [Github](https://github.com/sunfarm/porte/issues) requesting a site and I'll try to help you set one up for free (for a limited time)."
             ]
         }
     ]
