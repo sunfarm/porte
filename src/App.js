@@ -48,7 +48,7 @@ class App extends Component {
                     </div>
                 </nav>
 
-                <section className="section">
+                <section className="section hero is-fullheight-with-navbar">
                     <div className="columns">
                         <div className="column">
                             <div className="box">
