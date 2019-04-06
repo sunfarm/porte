@@ -10,7 +10,7 @@ Porte is a simple portfolio site built with [React](https://reactjs.org/) and [B
 1. Add your info.
 Update the file `./src/info.json` with your information. You might like using a tool I created called [DataDoer](https://datadoer.app/) to create your own json file.
 2. Update images.
-Replace images with your own files. I recommend using [Figma](https://www.figma.com) for the favicon and logo. [Here's the one used for this site](https://www.figma.com/file/gpcVoQJhrOfwgkaENFv2mAlR/Porte?node-id=0%3A1).
+Replace images with your own files. I recommend using [Figma](https://www.figma.com) for the favicon and logo. [Here's the Figma file for this site](https://www.figma.com/file/gpcVoQJhrOfwgkaENFv2mAlR/Porte?node-id=0%3A1).
 - `public/images/background.jpg`
 - `public/favicon.png`
 - `public/images/logo.png`
