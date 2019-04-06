@@ -6,9 +6,11 @@ import './App.css';
 
 ReactGA.initialize(process.env.REACT_APP_GA_ID);
 
+const images = require.context('../public/images', true);
+
 const info = require('./info.json');
-const logo = require('./logo.png');
-const image = require('./background.jpg');
+// const logo = require('./logo.png');
+const logo = images('./logo.png');
 const faGithub = require('./github-brands.svg');
 const defaultTag = info.tags[0];
 
@@ -23,6 +25,7 @@ class App extends Component {
 
     componentDidMount = () => {
         ReactGA.pageview(window.location.pathname + window.location.search);
+        document.title = info.fullName;
     }
 
     render() {
@@ -50,16 +53,16 @@ class App extends Component {
                         <div className="column">
                             <div className="box">
                                 {info.github ?
-                                <a className="icon is-pulled-right" href={'https://github.com/' + info.github}>
-                                    <img src={faGithub} alt="Github" />
-                                </a>
-                                : ''}
+                                    <a className="icon is-pulled-right" href={'https://github.com/' + info.github}>
+                                        <img src={faGithub} alt="Github" />
+                                    </a>
+                                    : ''}
                                 <h1 className="title is-1">{info.fullName}</h1>
                                 <h4 className="subtitle is-4">{info.position}</h4>
 
                                 <p>{info.bio}</p>
                             </div>
-                            {info.boxes.map((box, i) => {
+                            {info.boxes.filter(box => !box.column || box.column === 1).map((box, i) => {
                                 if (box.tag && this.state.page !== box.tag) {
                                     return '';
                                 }
@@ -69,12 +72,26 @@ class App extends Component {
                                         title={box.title}
                                         paragraph={box.paragraph}
                                         items={box.items}
+                                        image={box.image}
                                     />
                                 );
                             })}
                         </div>
                         <div className="column">
-                            <img className="rounded" src={image}></img>
+                            {info.boxes.filter(box => box.column === 2).map((box, i) => {
+                                if (box.tag && this.state.page !== box.tag) {
+                                    return '';
+                                }
+                                return (
+                                    <Box
+                                        key={i}
+                                        title={box.title}
+                                        paragraph={box.paragraph}
+                                        items={box.items}
+                                        image={box.image}
+                                    />
+                                );
+                            })}
                         </div>
                     </div>
                 </section>

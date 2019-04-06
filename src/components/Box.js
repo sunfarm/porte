@@ -1,7 +1,23 @@
 import React, { Component } from 'react';
 
+const images = require.context('../../public/images', true);
+
 export default class Box extends Component {
+
+    replaceMarkdownLinks = item => {
+        return item.replace(
+            /\[(.*?)]\(((?:https?|www|\/).*?)\)/,
+            "<a href='$2' target='_blank'>$1</a>"
+        );
+    };
+
     render() {
+        if (this.props.image) {
+            const image = images(`./${this.props.image}`);
+            return (
+                <img className="rounded" src={image}></img>
+            );
+        }
         if (this.props.items) {
             return (
                 <div className="box">
@@ -29,7 +45,12 @@ export default class Box extends Component {
                             }
                         }
                         return (
-                            <p key={i}>{item}</p>
+                            <p
+                                dangerouslySetInnerHTML={{
+                                    __html: this.replaceMarkdownLinks(item)
+                                }}
+                                key={i}
+                            />
                         );
                     })}
                 </div>
