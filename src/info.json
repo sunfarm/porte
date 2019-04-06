@@ -7,8 +7,7 @@
     "tags": [
         "Developer",
         "Musician",
-        "Human",
-        "Learner"
+        "Human"
     ],
     "boxes": [
         {
@@ -17,8 +16,7 @@
             "paragraph": "I can be heard on these albums",
             "items": [
                 "Cedar - Human Nature",
-                "Cedar - Siren",
-                "Cedar - esc"
+                "Cedar - Siren"
             ]
         },
         {
@@ -38,21 +36,20 @@
         {
             "title": "Tools",
             "tag": "Developer",
-            "paragraph": "I use these tools to get things done. I think you can learn a lot about a developer from their [dotfiles]()",
+            "paragraph": "I use these tools to get things done.",
             "items": [
                 "Things 3 - My external brain",
-                "Visual Studio Code - With [these plugins](www.google.com)",
+                "Visual Studio Code",
                 "Spectacle - To move windows with my keyboard",
                 "Docker",
                 "JetBrains PhpStorm - Because IDEs are great sometimes",
                 "Git - here's my (git config file)[https://gist.github.com/sunfarm/1856087ce8add0bc0cd65d17d7101f21]",
-                "tmux/tmuxilator - here's my config !! put on github !!"
+                "tmux/tmuxilator"
             ]
         },
         {
             "title": "Education",
             "tag": "Developer",
-            "paragraph": "I think this is a good point to be upfront that I don't have a CS degree. While I don't wish to undervalue such degrees and may pursue such a degree at some point, in my experience the day-to-day skills required for what I do are not imparted by such degrees and esoteric knowledge can be studied and learned in context much more easily than in the more abstract academic setting. I am routinely baffled by the things that people DON'T learn in such programs. Most importantly, knowledge in this industry is easily available online and in excellent books and reading a text is a lot more meaningful when you're actually doing real work. If you disagree, no problem. You can probably grab another cup of coffee and move on to another prospect.",
             "items": [
                 {
                     "where": "University of Minnesota",
