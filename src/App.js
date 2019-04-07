@@ -37,6 +37,15 @@ class App extends Component {
                         <a className="navbar-item" href="#" onClick={(e) => { e.preventDefault(); this.setState({ page: defaultTag }); }}>
                             <img src={logo} alt={info.fullName} />
                         </a>
+                        {
+                            config.mobileTags &&
+                                info.tags.map((tag, i) => {
+                                    return <a key={i} className="navbar-item is-hidden-desktop" href="#" onClick={(e) => {
+                                        e.preventDefault();
+                                        this.setState({page: tag});
+                                    }}>{tag}</a>
+                                })
+                        }
                     </div>
 
                     <div className="navbar-menu">
@@ -63,16 +72,6 @@ class App extends Component {
 
                                 <p>{info.bio}</p>
                             </div>
-                            {
-                                config.mobileTags &&
-                                    <div className="box is-hidden-desktop level">
-                                        {
-                                            info.tags.map((tag, i) => {
-                                                return <a key={i} className="level-item" href="#" onClick={(e) => { e.preventDefault(); this.setState({ page: tag }); }}>{tag}</a>
-                                            })
-                                        }
-                                    </div>
-                            }
                             {info.boxes.filter(box => !box.column || box.column === 1).map((box, i) => {
                                 if (box.tag && this.state.page !== box.tag) {
                                     return '';
