@@ -1,88 +1,88 @@
 {
-    "fullName": "Ellen Ripley",
-    "position": "Warrant Officer",
-    "location": "Nostromo",
-    "github": "",
-    "bio": "She's not a sidekick, arm candy, or a damsel to be rescued. Starting with Alien, Ripley was a fully competent member of a crew or ensemble — not always liked and sometimes disrespected, but doing her job all the same. As each film progresses, she comes to the fore and faces challenges head-on — she's the hero of the piece, in other words Ripley isn't a fantasy version of a woman. Science fiction film is filled with hot kickass women doing impossible things with guns and melee weapons while they spin about like a gymnast in a dryer. As fun as that is to watch, at the end of the day it's still giving women short shrift, since what they are then are idealized killer fembots rather than actual human beings. Ripley, on the other hand, is pushy, aggressive, rude, injured, suffering from post-traumatic syndrome, not wearing makeup, tired, smart, maternal, angry, empathetic, and determined to save others, even at great cost to herself. All without being a spinny killbot.",
-    "tags": [
-        "Explorer",
-        "Exterminator"
-    ],
-    "boxes": [
+  "fullName": "Ellen Ripley",
+  "position": "Warrant Officer",
+  "location": "Nostromo",
+  "github": "",
+  "bio": "She's not a sidekick, arm candy, or a damsel to be rescued. Starting with Alien, Ripley was a fully competent member of a crew or ensemble — not always liked and sometimes disrespected, but doing her job all the same. As each film progresses, she comes to the fore and faces challenges head-on — she's the hero of the piece, in other words Ripley isn't a fantasy version of a woman. Science fiction film is filled with hot kickass women doing impossible things with guns and melee weapons while they spin about like a gymnast in a dryer. As fun as that is to watch, at the end of the day it's still giving women short shrift, since what they are then are idealized killer fembots rather than actual human beings. Ripley, on the other hand, is pushy, aggressive, rude, injured, suffering from post-traumatic syndrome, not wearing makeup, tired, smart, maternal, angry, empathetic, and determined to save others, even at great cost to herself. All without being a spinny killbot.",
+  "tags": [
+    "Explorer",
+    "Exterminator"
+  ],
+  "boxes": [
+    {
+      "title": "Hobbies",
+      "tag": "Explorer",
+      "paragraph": "Insert paragraph here",
+      "items": [
+        "First thing",
+        "Second thing",
+        "Third thing"
+      ]
+    },
+    {
+      "title": "Skills",
+      "tag": "Exterminator",
+      "paragraph": "I have these skills",
+      "items": [
+        "One",
+        "Two",
+        "Three",
+        "Fourth"
+      ]
+    },
+    {
+      "title": "Tools",
+      "paragraph": "I use these tools to get things done",
+      "items": [
+        "Flamethrower?",
+        "Mining mech?",
+        "Please help me add more Alien references!"
+      ]
+    },
+    {
+      "title": "Education",
+      "tag": "Exterminator",
+      "paragraph": "I have learned by doing",
+      "items": [
         {
-            "title": "Hobbies",
-            "tag": "Explorer",
-            "paragraph": "Insert paragraph here",
-            "items": [
-                "First thing",
-                "Second thing",
-                "Third thing"
-            ]
-        },
-        {
-            "title": "Skills",
-            "tag": "Exterminator",
-            "paragraph": "I have these skills",
-            "items": [
-                "One",
-                "Two",
-                "Three",
-                "Fourth"
-            ]
-        },
-        {
-            "title": "Tools",
-            "paragraph": "I use these tools to get things done",
-            "items": [
-                "Flamethrower?",
-                "Mining mech?",
-                "Please help me add more Alien references!"
-            ]
-        },
-        {
-            "title": "Education",
-            "tag": "Exterminator",
-            "paragraph": "I have learned by doing",
-            "items": [
-                {
-                    "where": "School of hard knocks",
-                    "what": "Life experience"
-                }
-            ]
-        },
-        {
-            "title": "Books",
-            "paragraph": "These are books",
-            "items": [
-                {
-                    "title": "Getting Things Done",
-                    "authors": "David Allen"
-                }
-            ]
-        },
-        {
-            "column": 2,
-            "image": "background.jpg"
-        },
-        {
-            "column": 2,
-            "title": "Porte",
-            "paragraph": "So how do I use Porte?",
-            "items": [
-                "Fork the repo",
-                "Modify info.json",
-                "Replace the images in ./public/images/",
-                "Detailed instructions available on [Github](https://github.com/sunfarm/porte)",
-                "If this is still a bit too technical for you, open an issue on [Github](https://github.com/sunfarm/porte/issues) requesting a site and I'll try to help you set one up for free (for a limited time)."
-            ]
-        },
-        {
-            "column": 2,
-            "title": "Who's using Porte?",
-            "paragraph": "Just me right now... if you use it, send me a message or PR on Github to add your site to this list!",
-            "items": [
-                "Nathanael Raway, Software Developer - [nathanaelraway.com](https://nathanaelraway.com/)"
-            ]
+          "where": "School of hard knocks",
+          "what": "Life experience"
         }
-    ]
+      ]
+    },
+    {
+      "title": "Books",
+      "paragraph": "These are books",
+      "items": [
+        {
+          "title": "Getting Things Done",
+          "authors": "David Allen"
+        }
+      ]
+    },
+    {
+      "column": 2,
+      "image": "background.jpg"
+    },
+    {
+      "column": 2,
+      "title": "Porte",
+      "paragraph": "So how do I use Porte?",
+      "items": [
+        "Fork the repo",
+        "Modify info.json",
+        "Replace the images in ./public/images/",
+        "Detailed instructions available on [Github](https://github.com/sunfarm/porte)",
+        "If this is still a bit too technical for you, open an issue on [Github](https://github.com/sunfarm/porte/issues) requesting a site and I'll try to help you set one up for free (for a limited time)."
+      ]
+    },
+    {
+      "column": 2,
+      "title": "Who's using Porte?",
+      "paragraph": "Just me right now... if you use it, send me a message or PR on Github to add your site to this list!",
+      "items": [
+        "Nathanael Raway, Software Developer - [nathanaelraway.com](https://nathanaelraway.com/)"
+      ]
+    }
+  ]
 }
