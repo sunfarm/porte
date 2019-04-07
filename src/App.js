@@ -10,6 +10,7 @@ const images = require.context('../public/images', true);
 
 const info = require('./info.json');
 // const logo = require('./logo.png');
+const config = require('./config.json');
 const logo = images('./logo.png');
 const faGithub = require('./github-brands.svg');
 const defaultTag = info.tags[0];
@@ -62,6 +63,16 @@ class App extends Component {
 
                                 <p>{info.bio}</p>
                             </div>
+                            {
+                                config.mobileTags &&
+                                    <div className="box is-hidden-desktop level">
+                                        {
+                                            info.tags.map((tag, i) => {
+                                                return <a key={i} className="level-item" href="#" onClick={(e) => { e.preventDefault(); this.setState({ page: tag }); }}>{tag}</a>
+                                            })
+                                        }
+                                    </div>
+                            }
                             {info.boxes.filter(box => !box.column || box.column === 1).map((box, i) => {
                                 if (box.tag && this.state.page !== box.tag) {
                                     return '';
