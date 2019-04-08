@@ -35,15 +35,17 @@ class App extends Component {
                         <a className="navbar-item" href="#" onClick={(e) => { e.preventDefault(); this.setState({ page: defaultTag }) }}>
                             <img src={logo} alt={info.fullName} />
                         </a>
-                    </div>
-
-                    <div className="navbar-menu">
-                        <div className="navbar-start">
-                            {/* <a className="navbar-item" href={window.location.href}>{info.fullName}</a> */}
-                            {info.tags.map((tag, i) => {
-                                return <a key={i} className="navbar-item" href="#" onClick={(e) => { e.preventDefault(); this.setState({ page: tag }) }}>{tag}</a>
-                            })}
-                        </div>
+                        {
+                            info.tags.map((tag, i) => {
+                                return <a
+                                    key={i}
+                                    className={"navbar-item" + (i > 2 ? " is-hidden-mobile" : "")}
+                                    href="#"
+                                    onClick={(e) => { e.preventDefault(); this.setState({page: tag}) }}>
+                                    {tag}
+                                </a>
+                            })
+                        }
                     </div>
                 </nav>
 
