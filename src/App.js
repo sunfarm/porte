@@ -1,32 +1,30 @@
-import React, { Component } from 'react';
-import Box from './components/Box';
-import ReactGA from 'react-ga';
-import 'bulma';
-import './App.css';
+import React, { Component } from 'react'
+import Box from './components/Box'
+import ReactGA from 'react-ga'
+import 'bulma'
+import './App.css'
 
-ReactGA.initialize(process.env.REACT_APP_GA_ID);
+ReactGA.initialize(process.env.REACT_APP_GA_ID)
 
-const images = require.context('../public/images', true);
+const images = require.context('../public/images', true)
 
-const info = require('./info.json');
-// const logo = require('./logo.png');
-const config = require('./config.json');
-const logo = images('./logo.png');
-const faGithub = require('./github-brands.svg');
-const defaultTag = info.tags[0];
+const info = require('./info.json')
+const logo = images('./logo.png')
+const faGithub = require('./github-brands.svg')
+const defaultTag = info.tags[0]
 
 class App extends Component {
     constructor(props) {
-        super(props);
+        super(props)
 
         this.state = {
             page: defaultTag,
-        };
+        }
     }
 
     componentDidMount = () => {
-        ReactGA.pageview(window.location.pathname + window.location.search);
-        document.title = info.fullName;
+        ReactGA.pageview(window.location.pathname + window.location.search)
+        document.title = info.fullName
     }
 
     render() {
@@ -34,31 +32,24 @@ class App extends Component {
             <div className="App">
                 <nav className="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
                     <div className="navbar-brand">
-                        <a className="navbar-item" href="#" onClick={(e) => { e.preventDefault(); this.setState({ page: defaultTag }); }}>
+                        <a className="navbar-item" href="#" onClick={(e) => { e.preventDefault(); this.setState({ page: defaultTag }) }}>
                             <img src={logo} alt={info.fullName} />
                         </a>
                         {
-                            config.mobileTags &&
-                                info.tags.map((tag, i) => {
-                                    return <a key={i} className="navbar-item is-hidden-desktop" href="#" onClick={(e) => {
-                                        e.preventDefault();
-                                        this.setState({page: tag});
-                                    }}>{tag}</a>
-                                })
+                            info.tags.map((tag, i) => {
+                                return <a
+                                    key={i}
+                                    className={"navbar-item" + (i > 2 ? " is-hidden-mobile" : "")}
+                                    href="#"
+                                    onClick={(e) => { e.preventDefault(); this.setState({page: tag}) }}>
+                                    {tag}
+                                </a>
+                            })
                         }
-                    </div>
-
-                    <div className="navbar-menu">
-                        <div className="navbar-start">
-                            {/* <a className="navbar-item" href={window.location.href}>{info.fullName}</a> */}
-                            {info.tags.map((tag, i) => {
-                                return <a key={i} className="navbar-item" href="#" onClick={(e) => { e.preventDefault(); this.setState({ page: tag }); }}>{tag}</a>
-                            })}
-                        </div>
                     </div>
                 </nav>
 
-                <section className="section">
+                <section className="section hero is-fullheight-with-navbar">
                     <div className="columns">
                         <div className="column">
                             <div className="box">
@@ -74,7 +65,7 @@ class App extends Component {
                             </div>
                             {info.boxes.filter(box => !box.column || box.column === 1).map((box, i) => {
                                 if (box.tag && this.state.page !== box.tag) {
-                                    return '';
+                                    return ''
                                 }
                                 return (
                                     <Box
@@ -84,13 +75,13 @@ class App extends Component {
                                         items={box.items}
                                         image={box.image}
                                     />
-                                );
+                                )
                             })}
                         </div>
                         <div className="column">
                             {info.boxes.filter(box => box.column === 2).map((box, i) => {
                                 if (box.tag && this.state.page !== box.tag) {
-                                    return '';
+                                    return ''
                                 }
                                 return (
                                     <Box
@@ -100,14 +91,14 @@ class App extends Component {
                                         items={box.items}
                                         image={box.image}
                                     />
-                                );
+                                )
                             })}
                         </div>
                     </div>
                 </section>
             </div>
-        );
+        )
     }
 }
 
-export default App;
+export default App
