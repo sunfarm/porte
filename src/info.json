@@ -121,5 +121,31 @@
             "column": 2,
             "image": "background.jpg"
         }
-    ]
+      ]
+    },
+    {
+      "column": 2,
+      "image": "background.jpg"
+    },
+    {
+      "column": 2,
+      "title": "Porte",
+      "paragraph": "So how do I use Porte?",
+      "items": [
+        "Fork the repo",
+        "Modify info.json",
+        "Replace the images in ./public/images/",
+        "Detailed instructions available on [Github](https://github.com/sunfarm/porte)",
+        "If this is still a bit too technical for you, open an issue on [Github](https://github.com/sunfarm/porte/issues) requesting a site and I'll try to help you set one up for free (for a limited time)."
+      ]
+    },
+    {
+      "column": 2,
+      "title": "Who's using Porte?",
+      "paragraph": "Just me right now... if you use it, send me a message or PR on Github to add your site to this list!",
+      "items": [
+        "Nathanael Raway, Software Developer - [nathanaelraway.com](https://nathanaelraway.com/)"
+      ]
+    }
+  ]
 }
