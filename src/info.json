@@ -113,8 +113,20 @@
             ]
         },
         {
+            "tag": "Developer",
             "column": 2,
-            "image": "background.jpg"
+            "image": "developer.jpg"
+        },
+        {
+            "tag": "Musician",
+            "column": 2,
+            "image": "music.jpg"
+        },
+        {
+            "tag": "Human",
+            "column": 2,
+            "image": "human.jpg"
+
         }
     ]
 }
