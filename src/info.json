@@ -7,7 +7,8 @@
     "tags": [
         "Developer",
         "Musician",
-        "Human"
+        "Human",
+        "Blogue"
     ],
     "boxes": [
         {
@@ -126,7 +127,14 @@
             "tag": "Human",
             "column": 2,
             "image": "human.jpg"
-
+        },
+        {
+            "title": "What is this?",
+            "column": 2,
+            "tag": "Blogue",
+            "date": "2019.04.09",
+            "paragraph": "I have recently started tracking some behaviors that I would like to establish as habits. I am using an app called Streaks and have daily and weekly habits. One of my weekly habits is to 'Get an idea out' which means taking an idea from my list of ideas that I have been accumulating over the years and put it into the world in some way. Sometimes this means creating a project on Github with some basic functionality, but other ideas are more abstract so I need a platform for releasing those ideas. This will be that platform for now.",
+            "items": []
         }
     ]
 }
