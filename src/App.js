@@ -74,6 +74,7 @@ class App extends Component {
                                         paragraph={box.paragraph}
                                         items={box.items}
                                         image={box.image}
+                                        date={box.date}
                                     />
                                 )
                             })}
@@ -90,6 +91,7 @@ class App extends Component {
                                         paragraph={box.paragraph}
                                         items={box.items}
                                         image={box.image}
+                                        date={box.date}
                                     />
                                 )
                             })}

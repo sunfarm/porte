@@ -53,6 +53,7 @@ export default class Box extends Component {
                             />
                         );
                     })}
+                    {this.props.date && <p className="is-pulled-right has-text-grey-light is-italic is-size-7">{this.props.date}</p>}
                 </div>
             );
         }
