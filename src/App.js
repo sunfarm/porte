@@ -19,6 +19,7 @@ class App extends Component {
 
     this.state = {
       page: defaultTag,
+      menuOpen: false,
     }
   }
 
@@ -35,25 +36,27 @@ class App extends Component {
             <a className="navbar-item" href="#" onClick={(e) => { e.preventDefault(); this.setState({ page: defaultTag }) }}>
               <img src={logo} alt={info.fullName} />
             </a>
-            {
-              info.tags.map((tag, i) => {
-                return <a
-                  key={i}
-                  className={"navbar-item" + (i > 2 ? " is-hidden-mobile" : "")}
-                  href="#"
-                  onClick={(e) => { e.preventDefault(); this.setState({ page: tag }) }}>
-                  {tag}
-                </a>
-              })
-            }
+            <a role="button" class="navbar-burger burger"
+              aria-label="menu" aria-expanded="false" data-target="navbarBasicExample"
+              onClick={() => this.setState((previousState) => { return { menuOpen: !previousState.menuOpen } })}
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
           </div>
-
-          <div className="navbar-menu">
-            <div className="navbar-start">
-              {/* <a className="navbar-item" href={window.location.href}>{info.fullName}</a> */}
-              {info.tags.map((tag, i) => {
-                return <a key={i} className="navbar-item" href="#" onClick={(e) => { e.preventDefault(); this.setState({ page: tag }) }}>{tag}</a>
-              })}
+          <div className={'navbar-menu' + (this.state.menuOpen ? ' is-active' : '')}>
+            <div class="navbar-start">
+              {
+                info.tags.map((tag, i) => {
+                  return <a
+                    key={i}
+                    className={'navbar-item' + (i > 2 ? ' is-hidden-mobile' : '')}
+                    onClick={(e) => { e.preventDefault(); this.setState({ page: tag, menuOpen: false }) }}>
+                    {tag}
+                  </a>
+                })
+              }
             </div>
           </div>
         </nav>
