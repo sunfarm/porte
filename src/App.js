@@ -11,6 +11,7 @@ const images = require.context('../public/images', true)
 const info = require('./info.json')
 const logo = images('./logo.png')
 const faGithub = require('./github-brands.svg')
+const faTwitter = require('./twitter-brands.svg')
 const defaultTag = info.tags[0]
 
 class App extends Component {
@@ -68,6 +69,11 @@ class App extends Component {
                 {info.github ?
                   <a className="icon is-pulled-right" href={'https://github.com/' + info.github}>
                     <img src={faGithub} alt="Github" />
+                  </a>
+                  : ''}
+                {info.twitter ?
+                  <a className="icon is-pulled-right" href={'https://twitter.com/' + info.twitter}>
+                    <img src={faTwitter} alt="Twitter" />
                   </a>
                   : ''}
                 <h1 className="title is-1">{info.fullName}</h1>
