@@ -115,6 +115,11 @@ class App extends Component {
               })}
             </div>
           </div>
+          <div className="level porte-credit">
+            <div class="level-item is-size-7">
+              <p>You can publish a site like this for free in about 20 minutes with <a href="https://github.com/sunfarm/porte">Porte</a>!</p>
+            </div>
+          </div>
         </section>
       </div>
     )
