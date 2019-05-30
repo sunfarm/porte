@@ -25,10 +25,10 @@
             "tag": "Developer",
             "paragraph": "I have particular and recent experience with the following technologies",
             "items": [
-                "JavaScript / TypeScript / JQuery / React / AngularJS / Angular",
+                "JavaScript / TypeScript / JQuery / React / Redux / AngularJS / Angular",
                 "PHP / Symfony / Yii",
+                "C# / .NET / .NET Core / Entity Framework",
                 "Python / Flask / Django",
-                "C# / .NET / .NET Core",
                 "BASH / Lua",
                 "MySQL / Redis",
                 "AWS / Docker / Flynn / Ansible"
@@ -41,12 +41,13 @@
             "items": [
                 "Things 3 - Inbox/todo list",
                 "Notion - Note-taking",
-                "Visual Studio Code",
                 "Spectacle - To move windows with my keyboard",
-                "Docker",
+                "Keyboard Maestro - Text replacement, OS automation",
+                "Visual Studio Code - Text editor",
                 "JetBrains PhpStorm - Because IDEs are great sometimes",
+                "Docker - Containers, containers",
                 "Git - here's my [git config file](https://gist.github.com/sunfarm/1856087ce8add0bc0cd65d17d7101f21)",
-                "tmux/tmuxilator"
+                "tmux/tmuxilator - Automated development context"
             ]
         },
         {
