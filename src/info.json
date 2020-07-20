@@ -3,7 +3,12 @@
   "position": "Warrant Officer",
   "location": "Nostromo",
   "github": "",
-  "bio": "She's not a sidekick, arm candy, or a damsel to be rescued. Starting with Alien, Ripley was a fully competent member of a crew or ensemble — not always liked and sometimes disrespected, but doing her job all the same. As each film progresses, she comes to the fore and faces challenges head-on — she's the hero of the piece, in other words Ripley isn't a fantasy version of a woman. Science fiction film is filled with hot kickass women doing impossible things with guns and melee weapons while they spin about like a gymnast in a dryer. As fun as that is to watch, at the end of the day it's still giving women short shrift, since what they are then are idealized killer fembots rather than actual human beings. Ripley, on the other hand, is pushy, aggressive, rude, injured, suffering from post-traumatic syndrome, not wearing makeup, tired, smart, maternal, angry, empathetic, and determined to save others, even at great cost to herself. All without being a spinny killbot.",
+  "bio": [
+    "Lieutenant First Class Ellen Louise Ripley was a civilian adviser to the United States Colonial Marine Corps and a hugely influential figure in humanity's encounters with the species Xenomorph XX121. She was the mother of Amanda Ripley-McClaren and the forebear of Alan Decker.",
+    "Beginning her career as a warrant officer with Weyland-Yutani's commercial freight operations, she was assigned to the USCSS Nostromo in 2122 when it encountered a single Xenomorph unintentionally collected from the planetoid LV-426. The event led to the death of the rest of her crew and the destruction of the ship, and her discovery of the Xenomorph would change the course of her life and plague her for the rest of her existence.",
+    "Later promoted to Lieutenant First Class and attached to the Colonial Marines as a civilian adviser, she would go on to have several more encounters with the creatures over the following decades, before eventually giving her life on Fiorina \"Fury\" 161 to put an end to the Alien menace once and for all. Her exploits ensured that she was well-known among groups and individuals that dealt with the Xenomorph for decades, even centuries, after her death.",
+    "Source: [AVP Fandom](https://avp.fandom.com/wiki/Ellen_Ripley)"
+  ],
   "tags": [
     "Explorer",
     "Exterminator"

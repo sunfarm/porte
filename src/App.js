@@ -29,6 +29,16 @@ class App extends Component {
     document.title = info.fullName
   }
 
+  replaceMarkdownLinks = item => {
+    if (Array.isArray(item)) {
+      item = item.join('<br />')
+    }
+    return item.replace(
+      /\[(.*?)]\(((?:https?|www|\/).*?)\)/,
+      "<a href='$2' target='_blank'>$1</a>"
+    )
+  }
+
   render() {
     return (
       <div className="App">
@@ -79,7 +89,12 @@ class App extends Component {
                 <h1 className="title is-1">{info.fullName}</h1>
                 <h4 className="subtitle is-4">{info.position}</h4>
 
-                <p>{info.bio}</p>
+                <p
+                dangerouslySetInnerHTML={{
+                  __html: this.replaceMarkdownLinks(info.bio)
+                }}
+              />
+
               </div>
               {info.boxes.filter(box => !box.column || box.column === 1).map((box, i) => {
                 if (box.tag && this.state.page !== box.tag) {
