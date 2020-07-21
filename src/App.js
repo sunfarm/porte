@@ -39,6 +39,24 @@ class App extends Component {
     )
   }
 
+  renderParagraphs = items => {
+    let arr = [].concat(items)
+    return (
+      <span>
+        {arr.map((p) => {
+        console.log(p)
+        return (
+          <p
+            dangerouslySetInnerHTML={{
+              __html: this.replaceMarkdownLinks(p)
+            }}
+          />
+        )
+      })}
+    </span>
+    )
+  }
+
   render() {
     return (
       <div className="App">
@@ -60,7 +78,7 @@ class App extends Component {
             </a>
           </div>
           <div className={'navbar-menu' + (this.state.menuOpen ? ' is-active' : '')}>
-            <div class="navbar-start">
+            <div className="navbar-start">
               {
                 info.tags.map((tag, i) => {
                   return (
@@ -94,11 +112,7 @@ class App extends Component {
                 <h1 className="title is-1">{info.fullName}</h1>
                 <h4 className="subtitle is-4">{info.position}</h4>
 
-                <p
-                dangerouslySetInnerHTML={{
-                  __html: this.replaceMarkdownLinks(info.bio)
-                }}
-              />
+                {this.renderParagraphs(info.bio)}
 
               </div>
               {info.boxes.filter(box => !box.column || box.column === 1).map((box, i) => {
@@ -136,7 +150,7 @@ class App extends Component {
             </div>
           </div>
           <div className="level porte-credit">
-            <div class="level-item is-size-7">
+            <div className="level-item is-size-7">
               <p>You can publish a site like this for free in about 20 minutes with <a href="https://github.com/sunfarm/porte">Porte</a>!</p>
             </div>
           </div>
