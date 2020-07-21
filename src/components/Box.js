@@ -15,7 +15,7 @@ export default class Box extends Component {
     if (this.props.image) {
       const image = images(`./${this.props.image}`)
       return (
-        <img className="rounded" src={image}></img>
+        <img className="rounded" src={image} alt={this.props.alt ? this.props.alt : ''}></img>
       )
     }
     if (this.props.items) {

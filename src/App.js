@@ -44,12 +44,15 @@ class App extends Component {
       <div className="App">
         <nav className="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
           <div className="navbar-brand">
-            <a className="navbar-item" href="#" onClick={(e) => { e.preventDefault(); this.setState({ page: defaultTag }) }}>
+            <a href={'/' + defaultTag} className="navbar-item"
+              onClick={(e) => { e.preventDefault(); this.setState({ page: defaultTag }) }}
+            >
               <img src={logo} alt={info.fullName} />
             </a>
-            <a role="button" class="navbar-burger burger"
+            <a href={'/menu'} className="navbar-burger burger"
+              onClick={(e) => { e.preventDefault(); this.setState((previousState) => { return { menuOpen: !previousState.menuOpen } })}}
+              role="button"
               aria-label="menu" aria-expanded="false" data-target="navbarBasicExample"
-              onClick={() => this.setState((previousState) => { return { menuOpen: !previousState.menuOpen } })}
             >
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
@@ -60,12 +63,14 @@ class App extends Component {
             <div class="navbar-start">
               {
                 info.tags.map((tag, i) => {
-                  return <a
-                    key={i}
-                    className={'navbar-item' + (i > 2 ? ' is-hidden-mobile' : '')}
-                    onClick={(e) => { e.preventDefault(); this.setState({ page: tag, menuOpen: false }) }}>
-                    {tag}
-                  </a>
+                  return (
+                    <a href={'/' + tag} className={'navbar-item' + (i > 2 ? ' is-hidden-mobile' : '')}
+                      onClick={(e) => { e.preventDefault(); this.setState({ page: tag, menuOpen: false }) }}
+                      key={i}
+                    >
+                      {tag}
+                    </a>
+                  )
                 })
               }
             </div>
