@@ -42,7 +42,7 @@ class App extends Component {
   renderParagraphs = items => {
     let arr = [].concat(items)
     return (
-      <span>
+      <div>
         {arr.map((p) => {
         console.log(p)
         return (
@@ -53,7 +53,7 @@ class App extends Component {
           />
         )
       })}
-    </span>
+    </div>
     )
   }
 
