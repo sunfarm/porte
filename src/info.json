@@ -10,13 +10,13 @@
     "Source: [AVP Fandom](https://avp.fandom.com/wiki/Ellen_Ripley)"
   ],
   "tags": [
-    "Explorer",
+    "Freight Operations",
     "Exterminator"
   ],
   "boxes": [
     {
-      "title": "Hobbies",
-      "tag": "Explorer",
+      "title": "Occupation",
+      "tag": "Freight Operations",
       "paragraph": "Insert paragraph here",
       "items": [
         "First thing",
