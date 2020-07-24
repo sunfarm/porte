@@ -29,17 +29,48 @@ class App extends Component {
     document.title = info.fullName
   }
 
+  replaceMarkdownLinks = item => {
+    if (Array.isArray(item)) {
+      item = item.join('<br />')
+    }
+    return item.replace(
+      /\[(.*?)]\(((?:https?|www|\/).*?)\)/,
+      "<a href='$2' target='_blank'>$1</a>"
+    )
+  }
+
+  renderParagraphs = items => {
+    let arr = [].concat(items)
+    return (
+      <div>
+        {arr.map((p) => {
+        console.log(p)
+        return (
+          <p
+            dangerouslySetInnerHTML={{
+              __html: this.replaceMarkdownLinks(p)
+            }}
+          />
+        )
+      })}
+    </div>
+    )
+  }
+
   render() {
     return (
       <div className="App">
         <nav className="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
           <div className="navbar-brand">
-            <a className="navbar-item" href="#" onClick={(e) => { e.preventDefault(); this.setState({ page: defaultTag }) }}>
+            <a href={'/' + defaultTag} className="navbar-item"
+              onClick={(e) => { e.preventDefault(); this.setState({ page: defaultTag }) }}
+            >
               <img src={logo} alt={info.fullName} />
             </a>
-            <a role="button" class="navbar-burger burger"
+            <a href={'/menu'} className="navbar-burger burger"
+              onClick={(e) => { e.preventDefault(); this.setState((previousState) => { return { menuOpen: !previousState.menuOpen } })}}
+              role="button"
               aria-label="menu" aria-expanded="false" data-target="navbarBasicExample"
-              onClick={() => this.setState((previousState) => { return { menuOpen: !previousState.menuOpen } })}
             >
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
@@ -47,15 +78,17 @@ class App extends Component {
             </a>
           </div>
           <div className={'navbar-menu' + (this.state.menuOpen ? ' is-active' : '')}>
-            <div class="navbar-start">
+            <div className="navbar-start">
               {
                 info.tags.map((tag, i) => {
-                  return <a
-                    key={i}
-                    className={'navbar-item' + (i > 2 ? ' is-hidden-mobile' : '')}
-                    onClick={(e) => { e.preventDefault(); this.setState({ page: tag, menuOpen: false }) }}>
-                    {tag}
-                  </a>
+                  return (
+                    <a href={'/' + tag} className={'navbar-item' + (i > 2 ? ' is-hidden-mobile' : '')}
+                      onClick={(e) => { e.preventDefault(); this.setState({ page: tag, menuOpen: false }) }}
+                      key={i}
+                    >
+                      {tag}
+                    </a>
+                  )
                 })
               }
             </div>
@@ -79,7 +112,8 @@ class App extends Component {
                 <h1 className="title is-1">{info.fullName}</h1>
                 <h4 className="subtitle is-4">{info.position}</h4>
 
-                <p>{info.bio}</p>
+                {this.renderParagraphs(info.bio)}
+
               </div>
               {info.boxes.filter(box => !box.column || box.column === 1).map((box, i) => {
                 if (box.tag && this.state.page !== box.tag) {
@@ -116,7 +150,7 @@ class App extends Component {
             </div>
           </div>
           <div className="level porte-credit">
-            <div class="level-item is-size-7">
+            <div className="level-item is-size-7">
               <p>You can publish a site like this for free in about 20 minutes with <a href="https://github.com/sunfarm/porte">Porte</a>!</p>
             </div>
           </div>
