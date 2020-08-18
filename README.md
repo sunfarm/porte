@@ -42,6 +42,15 @@ You will also see any lint errors in the console.
 
 This project uses free icons from Fontawesome! which are licensed under the CC BY 4.0 license. See [their free license](https://fontawesome.com/license/free) page for more info. Attribution is included in the svg files themselves.
 
+## Additional Information
+
+There are some files which you would not want to be overwritten when merging master into another branch if that other branch is a separate site. These files contain the data unique to that site e.g. `src/info.json`. There is a merge attribute defined in `.gitattributes` to always keep the current version of these files. You will need to run the following command to create the required merge driver in your global git configuration in order for it to function:
+
+```
+git config --global merge.ours.driver true
+```
+
+You can comment out or delete lines in `.gitattributes` if you would like to disable this behavior for a particular branch. You can also add files to the list if you would like to extend this behavior to additional files.
 
 # How We Got Here
 How this project was created
