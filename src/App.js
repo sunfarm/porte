@@ -126,6 +126,8 @@ class App extends Component {
                     paragraph={box.paragraph}
                     items={box.items}
                     image={box.image}
+                    credit={box.credit}
+                    creditLink={box.creditLink}
                     date={box.date}
                   />
                 )
@@ -143,6 +145,8 @@ class App extends Component {
                     paragraph={box.paragraph}
                     items={box.items}
                     image={box.image}
+                    credit={box.credit}
+                    creditLink={box.creditLink}
                     date={box.date}
                   />
                 )

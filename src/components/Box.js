@@ -15,7 +15,10 @@ export default class Box extends Component {
     if (this.props.image) {
       const image = images(`./${this.props.image}`)
       return (
+        <div className="is-inline-block is-relative">
         <img className="rounded" src={image} alt={this.props.alt ? this.props.alt : ''}></img>
+        {this.props.credit ? <div className="is-overlay"><a className="tag is-dark is-pulled-right" href={this.props.creditLink}>{this.props.credit}</a></div> : ''}
+        </div>
       )
     }
     if (this.props.items) {

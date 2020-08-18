@@ -114,12 +114,16 @@
         {
             "tag": "Programmer",
             "column": 2,
-            "image": "developer.jpg"
+            "image": "developer.jpg",
+            "credit": "JuliAnne Jonker",
+            "creditLink": "https://www.juliannejonker.com/"
         },
         {
             "tag": "Musician",
             "column": 2,
-            "image": "music.jpg"
+            "image": "music.jpg",
+            "credit": "Daniel Brakke",
+            "creditLink": "https://www.linkedin.com/in/daniel-brakke-02429b165/"
         },
         {
             "title": "What is this?",
