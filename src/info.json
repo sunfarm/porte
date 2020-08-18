@@ -1,15 +1,15 @@
 {
     "fullName": "Nathanael Raway",
-    "position": "Software Developer",
+    "position": "",
     "location": "Minneapolis, MN",
     "github": "sunfarm",
     "twitter": "nathanaelraway",
-    "bio": "My love for programming started when I was a kid writing games in QuickBasic on Intel 3/486 machines. This hobby began to transition into a career when I started working professionally in 2013 on a Python Django website. Since then I have had the privilege of working on many projects, giving me the opportunity to learn a wide range of technologies and tools. I am always excited to grow deeper in my understanding or widen my knowledge by learning something new.",
+    "bio": "I am a programmer, techy, musician, armchair philosopher. I like to put great espresso, delicious food and cocktails in my face and audiobooks and Japanese in my brain. I have dog and wife and we are re-watching The Office and It's Always Sunny in Philadelphia together... again.",
     "tags": [
-        "Developer",
+        "Programmer",
         "Musician",
         "Human",
-        "Blogue"
+        "Blog?"
     ],
     "boxes": [{
             "title": "Albums",
@@ -22,22 +22,25 @@
         },
         {
             "title": "Skills",
-            "tag": "Developer",
-            "paragraph": "I have particular and recent experience with the following technologies",
+            "tag": "Programmer",
+            "paragraph": "I know about these things",
             "items": [
                 "JavaScript / TypeScript / JQuery / React / Redux / AngularJS / Angular",
                 "PHP / Symfony / Yii",
                 "C# / .NET / .NET Core / Entity Framework",
                 "Python / Flask / Django",
-                "BASH / Lua",
+                "BASH / Make / Lua",
                 "MySQL / Redis",
-                "AWS / Docker / Flynn / Ansible"
+                "AWS / Docker / Flynn / Ansible",
+                "MacOS / Windows / Linux / iTerm / Git / Vim",
+                "Blender / Photoshop / Premier",
+                "Ableton Live"
             ]
         },
         {
             "title": "Tools",
-            "tag": "Developer",
-            "paragraph": "I use these tools to get things done.",
+            "tag": "Programmer",
+            "paragraph": "I use these tools to get things done",
             "items": [
                 "Things 3 - Inbox/todo list",
                 "Notion - Note-taking",
@@ -82,19 +85,9 @@
                     "link": "https://amzn.to/2TL7C9k"
                 },
                 {
-                    "title": "The Coddling of the American Mind",
-                    "authors": "Jonathan Haidt, Greg Lukianoff",
-                    "link": "https://amzn.to/2UoD1mk"
-                },
-                {
                     "title": "Ordinary Men",
                     "authors": "Christopher R. Browning",
                     "link": "https://amzn.to/2WCFXcP"
-                },
-                {
-                    "title": "The Rape of Nanking",
-                    "authors": "Iris Chang",
-                    "link": "https://amzn.to/2YCIKnT"
                 },
                 {
                     "title": "Waking Up",
@@ -110,11 +103,16 @@
                     "title": "Sapiens",
                     "authors": "Yuval Noah Harari",
                     "link": "https://amzn.to/2HOKpSj"
+                },
+                {
+                    "title": "The Sun Does Shine",
+                    "authors": "Anthony Ray Hinton",
+                    "link": "https://smile.amazon.com/dp/1250309476/ref=cm_sw_r_tw_dp_x_c00oFbRECHR6G"
                 }
             ]
         },
         {
-            "tag": "Developer",
+            "tag": "Programmer",
             "column": 2,
             "image": "developer.jpg"
         },
@@ -124,16 +122,19 @@
             "image": "music.jpg"
         },
         {
-            "tag": "Human",
-            "column": 2,
-            "image": "human.jpg"
-        },
-        {
             "title": "What is this?",
             "column": 2,
-            "tag": "Blogue",
+            "tag": "Blog?",
             "date": "2019.04.09",
             "paragraph": "I have recently started tracking some behaviors that I would like to establish as habits. I am using an app called Streaks and have daily and weekly habits. One of my weekly habits is to 'Get an idea out' which means taking an idea from my list of ideas that I have been accumulating over the years and put it into the world in some way. Sometimes this means creating a project on Github with some basic functionality, but other ideas are more abstract so I need a platform for releasing those ideas. This will be that platform for now.",
+            "items": []
+        },
+        {
+            "title": "Hmmm...",
+            "column": 2,
+            "tag": "Blog?",
+            "date": "2020.08.17",
+            "paragraph": "I forgot about this...",
             "items": []
         }
     ]
