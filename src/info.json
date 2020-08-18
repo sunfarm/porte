@@ -11,13 +11,22 @@
         "Human",
         "Blog?"
     ],
-    "boxes": [{
+    "boxes": [
+        {
             "title": "Albums",
             "tag": "Musician",
-            "paragraph": "I can be heard on these albums",
+            "paragraph": "I played synth on these albums",
             "items": [
-                "Cedar - Human Nature",
-                "Cedar - Siren"
+                "[Cedar - Human Nature](https://open.spotify.com/album/1qMkBz1hAvTh9xwx73qD28?si=jlJs2uz1Q7Gpqt9s58b3SQ)",
+                "[Cedar - Siren](https://open.spotify.com/album/4tMevI7WCPw8LHmAKCDpTl?si=Vvv8BgTBRdKNB7Um2lyPLQ)"
+            ]
+        },
+        {
+            "title": "Jams",
+            "tag": "Musician",
+            "paragraph": "These are my jams right now",
+            "items": [
+                "[Washed Out - Purple Noon](https://open.spotify.com/album/0gkOhkjdFwKUtz9YXbp22L?si=C8VYCH5vT5qdBlGfODMkSQ)"
             ]
         },
         {
