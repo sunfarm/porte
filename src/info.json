@@ -4,7 +4,7 @@
     "location": "Minneapolis, MN",
     "github": "sunfarm",
     "twitter": "nathanaelraway",
-    "bio": "I am a programmer, techy, musician, armchair philosopher. I like to put great espresso, delicious food and cocktails in my face and audiobooks and Japanese in my brain. I have a very energetic lab-mix named Bailey. My wife and I are re-watching The Office and It's Always Sunny in Philadelphia together... again.",
+    "bio": "I am a programmer, techy, musician, armchair philosopher. I like to put great espresso, delicious food and cocktails in my face and audiobooks and Japanese in my brain. I have a very energetic lab-mix named Bailey and a new puppy named Coen who has a lot of skin to grow into. My wife and I are re-watching The Office and It's Always Sunny in Philadelphia together... again.",
     "tags": [
         "Programmer",
         "Musician",
@@ -81,43 +81,64 @@
             ]
         },
         {
+            "tag": "Human",
+            "column": 2,
+            "image": "dogs.jpg"
+        },
+        {
             "title": "Books",
             "tag": "Human",
             "paragraph": "I highly recommend these books for the wisdom or knowledge they impart or for the thoughts they provoke. These are all available as audiobooks because that's how I roll for anything non-technical.",
-            "items": [{
+            "items": [
+                {
+                    "title": "Breath",
+                    "authors": "James Nestor",
+                    "link": "https://read.amazon.com/kp/embed?asin=B0818ZZNLR&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_aKWJFb7708SD7&tag=mobilea042ae5-20"
+                },
+                {
+                    "title": "How to Change Your Mind",
+                    "authors": "Michael Pollan",
+                    "link": "https://read.amazon.com/kp/embed?asin=B076GPJXWZ&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_.HWJFb1QPT221&tag=mobilea042ae5-20"
+                },
+                {
+                    "title": "So You Want to Talk About Race",
+                    "authors": "Ijeoma Oluo",
+                    "link": "https://read.amazon.com/kp/embed?asin=B07QBNKJTZ&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_bHWJFbGKSGZ3E&tag=mobilea042ae5-20"
+                },
+                {
                     "title": "Getting Things Done",
                     "authors": "David Allen",
-                    "link": "https://amzn.to/2WBfUTk"
+                    "link": "https://read.amazon.com/kp/embed?asin=B00KWG9M2E&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_PKWJFbYRQXPTT&tag=mobilea042ae5-20"
                 },
                 {
                     "title": "The Righteous Mind",
                     "authors": "Jonathan Haidt",
-                    "link": "https://amzn.to/2TL7C9k"
+                    "link": "https://read.amazon.com/kp/embed?asin=B0052FF7YM&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_PKWJFb34PZCZJ&tag=mobilea042ae5-20"
                 },
                 {
                     "title": "Ordinary Men",
                     "authors": "Christopher R. Browning",
-                    "link": "https://amzn.to/2WCFXcP"
+                    "link": "https://read.amazon.com/kp/embed?asin=B01G1F0F84&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_QKWJFbWQYM0V2&tag=mobilea042ae5-20"
                 },
                 {
                     "title": "Waking Up",
                     "authors": "Sam Harris",
-                    "link": "https://amzn.to/2I1GeSm"
+                    "link": "https://read.amazon.com/kp/embed?asin=B00GEEB9YC&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_RKWJFbZQ4D2XX&tag=mobilea042ae5-20"
                 },
                 {
                     "title": "Quiet",
                     "authors": "Susan Cain",
-                    "link": "https://amzn.to/2HXO1Ay"
+                    "link": "https://read.amazon.com/kp/embed?asin=B004J4WNL2&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_SKWJFb4DT17XJ&tag=mobilea042ae5-20"
                 },
                 {
                     "title": "Sapiens",
                     "authors": "Yuval Noah Harari",
-                    "link": "https://amzn.to/2HOKpSj"
+                    "link": "https://read.amazon.com/kp/embed?asin=B00ICN066A&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_TKWJFbT218Y2E&tag=mobilea042ae5-20"
                 },
                 {
                     "title": "The Sun Does Shine",
                     "authors": "Anthony Ray Hinton",
-                    "link": "https://smile.amazon.com/dp/1250309476/ref=cm_sw_r_tw_dp_x_c00oFbRECHR6G"
+                    "link": "https://read.amazon.com/kp/embed?asin=B075DDDYHG&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_1KWJFbF9CNKCY&tag=mobilea042ae5-20"
                 }
             ]
         },
