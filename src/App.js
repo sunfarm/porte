@@ -6,8 +6,6 @@ import './App.css'
 
 ReactGA.initialize(process.env.REACT_APP_GA_ID)
 
-const images = require.context('../public/images', true)
-
 const info = require('./info.json')
 const faGithub = require('./github.svg')
 const faTwitter = require('./twitter.svg')
