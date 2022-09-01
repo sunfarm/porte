@@ -9,9 +9,9 @@ ReactGA.initialize(process.env.REACT_APP_GA_ID)
 const images = require.context('../public/images', true)
 
 const info = require('./info.json')
-const logo = images('./logo.png')
-const faGithub = require('./github-brands.svg')
-const faTwitter = require('./twitter-brands.svg')
+const faGithub = require('./github.svg')
+const faTwitter = require('./twitter.svg')
+const faInstagram = require('./instagram.svg')
 const defaultTag = info.tags[0]
 
 class App extends Component {
@@ -65,7 +65,12 @@ class App extends Component {
             <a href={'/' + defaultTag} className="navbar-item"
               onClick={(e) => { e.preventDefault(); this.setState({ page: defaultTag }) }}
             >
-              <img src={logo} alt={info.fullName} />
+              <span className="logo-text">
+&nbsp;_&nbsp;&nbsp;_&nbsp;&nbsp;___<br/ >
+| \| || _ \<br/ >
+| .&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;/<br/ >
+|_|\_||_|_\<br/ >
+        </span>
             </a>
             <a href={'/menu'} className="navbar-burger burger"
               onClick={(e) => { e.preventDefault(); this.setState((previousState) => { return { menuOpen: !previousState.menuOpen } })}}
@@ -99,16 +104,23 @@ class App extends Component {
           <div className="columns">
             <div className="column">
               <div className="box">
-                {info.github ?
-                  <a className="icon is-pulled-right" href={'https://github.com/' + info.github}>
-                    <img src={faGithub} alt="Github" />
-                  </a>
-                  : ''}
-                {info.twitter ?
-                  <a className="icon is-pulled-right" href={'https://twitter.com/' + info.twitter}>
-                    <img src={faTwitter} alt="Twitter" />
-                  </a>
-                  : ''}
+                <div class="is-pulled-right">
+                  {info.github ?
+                    <a className="icon" href={'https://github.com/' + info.github}>
+                      <img src={faGithub} alt="Github" />
+                    </a>
+                    : ''}
+                  {info.twitter ?
+                    <a className="icon" href={'https://twitter.com/' + info.twitter}>
+                      <img src={faTwitter} alt="Twitter" />
+                    </a>
+                    : ''}
+                  {info.instagram ?
+                    <a className="icon" href={'https://instagram.com/' + info.twitter}>
+                      <img src={faInstagram} alt="Instagram" />
+                    </a>
+                    : ''}
+                </div>
                 <h1 className="title is-1">{info.fullName}</h1>
                 <h4 className="subtitle is-4">{info.position}</h4>
 
@@ -153,10 +165,8 @@ class App extends Component {
               })}
             </div>
           </div>
-          <div className="level porte-credit">
-            <div className="level-item is-size-7">
-              <p>You can publish a site like this for free in about 20 minutes with <a href="https://github.com/sunfarm/porte">Porte</a>!</p>
-            </div>
+          <div className="level">
+            <span class="tag is-white is-pulled-right"><p>Made with <a href="https://github.com/sunfarm/porte">Porte</a></p></span>
           </div>
         </section>
       </div>
