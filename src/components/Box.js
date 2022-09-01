@@ -5,8 +5,8 @@ const images = require.context('../../public/images', true)
 export default class Box extends Component {
 
   replaceMarkdownLinks = (item) => {
-    return item.replace(
-      /\[(.*?)]\(((?:https?|www|\/).*?)\)/,
+    return item.replaceAll(
+      /\[(.*?)]\(((?:https?|www|\/).*?)\)/g,
       "<a href='$2' target='_blank'>$1</a>"
     )
   }

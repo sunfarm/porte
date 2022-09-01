@@ -33,8 +33,8 @@ class App extends Component {
     if (Array.isArray(item)) {
       item = item.join('<br />')
     }
-    return item.replace(
-      /\[(.*?)]\(((?:https?|www|\/).*?)\)/,
+    return item.replaceAll(
+      /\[(.*?)]\(((?:https?|www|\/).*?)\)/g,
       "<a href='$2' target='_blank'>$1</a>"
     )
   }
