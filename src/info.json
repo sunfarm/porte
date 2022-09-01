@@ -1,182 +1,64 @@
 {
-    "fullName": "Nat Raway",
-    "position": "",
-    "location": "Minneapolis, MN",
-    "github": "sunfarm",
-    "twitter": "nathanaelraway",
-    "instagram": "kilbit",
-    "bio": "I am a programmer, general tech enthusiast and audio/visual artist living in Minneapolis. My perfect day is breakfast at [Honey & Rye](https://www.honey-and-rye.com/), lunch at [Café Cerés](https://www.cafeceresmpls.com/) and dinner at [Colita](https://www.colitampls.com/).",
+    "fullName": "Ellen Ripley",
+    "position": "Warrant Officer",
+    "location": "Nostromo",
+    "github": "",
+    "bio": "She's not a sidekick, arm candy, or a damsel to be rescued. Starting with Alien, Ripley was a fully competent member of a crew or ensemble — not always liked and sometimes disrespected, but doing her job all the same. As each film progresses, she comes to the fore and faces challenges head-on — she's the hero of the piece, in other words Ripley isn't a fantasy version of a woman. Science fiction film is filled with hot kickass women doing impossible things with guns and melee weapons while they spin about like a gymnast in a dryer. As fun as that is to watch, at the end of the day it's still giving women short shrift, since what they are then are idealized killer fembots rather than actual human beings. Ripley, on the other hand, is pushy, aggressive, rude, injured, suffering from post-traumatic syndrome, not wearing makeup, tired, smart, maternal, angry, empathetic, and determined to save others, even at great cost to herself. All without being a spinny killbot.",
     "tags": [
-        "Code",
-        "Music",
-        "Self"
+        "Explorer",
+        "Exterminator"
     ],
     "boxes": [
         {
-            "title": "Albums",
-            "tag": "Music",
-            "paragraph": "I played synth on these tracks/albums",
+            "title": "Hobbies",
+            "tag": "Explorer",
+            "paragraph": "Inser paragraph here",
             "items": [
-                "[Always Straight Ahead - Perspectives](https://open.spotify.com/track/6A70S5kbcy1oOFofSZj5vD?si=121d3c7ce6cf4206)",
-                "[Cedar - Human Nature](https://open.spotify.com/album/1qMkBz1hAvTh9xwx73qD28?si=jlJs2uz1Q7Gpqt9s58b3SQ)",
-                "[Cedar - Siren](https://open.spotify.com/album/4tMevI7WCPw8LHmAKCDpTl?si=Vvv8BgTBRdKNB7Um2lyPLQ)"
-            ]
-        },
-        {
-            "title": "Jams",
-            "tag": "Music",
-            "paragraph": "These are my jams right now",
-            "items": [
-                "[Tourist - Inside Out](https://open.spotify.com/album/5VSjUsRU41obhoHo0ghMO0?si=0zpBjjPgT5a8CP9t7aTVSw)",
-                "[Chrome Sparks](https://open.spotify.com/album/5Y0yPA0zZetcpimqsegK1i?si=UrbzryPwRL2QVWR_TeOpsg)",
-                "[MUNA](https://open.spotify.com/album/4ndTvTrNwgUfRw4g1R2B4l?si=2aaQsmTDSTiNvRhMb63mxg)",
-                "[Max Cooper - Unspoken Words](https://open.spotify.com/album/5JuO2GgzgGLrF1Kz0l82Qk?si=0zsFWIr1Tlazd72xEWjTNA)"
+                "First thing",
+                "Second thing",
+                "Third thing"
             ]
         },
         {
             "title": "Skills",
-            "tag": "Code",
-            "paragraph": "I know about these things",
+            "tag": "Exterminator",
+            "paragraph": "I have these skills",
             "items": [
-                "JavaScript / TypeScript / JQuery / React / Redux / AngularJS / Angular / VueJS",
-                "PHP / Symfony / Yii / Craft CMS / Wordpress",
-                "C# / .NET / .NET Core / Entity Framework",
-                "Python / NumPy / Pandas / SQLAlchemy / Flask / Django",
-                "BASH / Make / Lua",
-                "MySQL / PostgreSQL / Redis",
-                "AWS / Docker / Flynn / Ansible",
-                "Gitlab Pipelines / Terraform",
-                "MacOS / Windows / Linux / iTerm",
-                "Git / tmux / VS Code / Vim / Jetbrains / Keyboard Maestro",
-                "Blender / Photoshop / Premier",
-                "Ableton Live / Max/MSP"
+                "One",
+                "Two",
+                "Three",
+                "Fourth"
             ]
         },
         {
             "title": "Tools",
-            "tag": "Code",
             "paragraph": "I use these tools to get things done",
             "items": [
-                "Macbook Pro 16\" M1 Max",
-                "Things 3 - Inbox/todo list",
-                "Notion - Note-taking",
-                "Rectangle - To move windows with my keyboard",
-                "Keyboard Maestro - Text replacement, OS automation",
-                "Visual Studio Code - Text editor",
-                "JetBrains - Because IDEs are great sometimes",
-                "Docker - Containers, containers",
-                "Git - here's my [git config file](https://gist.github.com/sunfarm/1856087ce8add0bc0cd65d17d7101f21)",
-                "tmux/tmuxilator - Automated development context"
+                "Flamethrower?",
+                "Mining mech?",
+                "Please help me add more Alien references!"
             ]
         },
         {
             "title": "Education",
-            "tag": "HIDDEN",
-            "items": [{
-                    "where": "University of Minnesota",
-                    "what": "School of Music (2011-2013)"
-                },
+            "tag": "Exterminator",
+            "paragraph": "I have learned by doing",
+            "items": [
                 {
-                    "where": "University of Minnesota",
-                    "what": "Computer Science (2010-2011)"
-                },
-                {
-                    "where": "Inver Hills Community College",
-                    "what": "Associate of Arts (2007-2009)"
+                    "where": "School of hard knocks",
+                    "what": "Life experience"
                 }
             ]
-        },
-        {
-            "tag": "Self",
-            "column": 2,
-            "image": "dogs.jpg"
         },
         {
             "title": "Books",
-            "tag": "Self",
-            "paragraph": "I highly recommend these books for the wisdom or knowledge they impart or for the thoughts they provoke. These are all available as audiobooks because that's how I roll for anything non-technical.",
+            "paragraph": "These are books",
             "items": [
                 {
-                    "title": "Breath",
-                    "authors": "James Nestor",
-                    "link": "https://read.amazon.com/kp/embed?asin=B0818ZZNLR&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_aKWJFb7708SD7&tag=mobilea042ae5-20"
-                },
-                {
-                    "title": "How to Change Your Mind",
-                    "authors": "Michael Pollan",
-                    "link": "https://read.amazon.com/kp/embed?asin=B076GPJXWZ&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_.HWJFb1QPT221&tag=mobilea042ae5-20"
-                },
-                {
-                    "title": "So You Want to Talk About Race",
-                    "authors": "Ijeoma Oluo",
-                    "link": "https://read.amazon.com/kp/embed?asin=B07QBNKJTZ&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_bHWJFbGKSGZ3E&tag=mobilea042ae5-20"
-                },
-                {
                     "title": "Getting Things Done",
-                    "authors": "David Allen",
-                    "link": "https://read.amazon.com/kp/embed?asin=B00KWG9M2E&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_PKWJFbYRQXPTT&tag=mobilea042ae5-20"
-                },
-                {
-                    "title": "The Righteous Mind",
-                    "authors": "Jonathan Haidt",
-                    "link": "https://read.amazon.com/kp/embed?asin=B0052FF7YM&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_PKWJFb34PZCZJ&tag=mobilea042ae5-20"
-                },
-                {
-                    "title": "Ordinary Men",
-                    "authors": "Christopher R. Browning",
-                    "link": "https://read.amazon.com/kp/embed?asin=B01G1F0F84&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_QKWJFbWQYM0V2&tag=mobilea042ae5-20"
-                },
-                {
-                    "title": "Waking Up",
-                    "authors": "Sam Harris",
-                    "link": "https://read.amazon.com/kp/embed?asin=B00GEEB9YC&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_RKWJFbZQ4D2XX&tag=mobilea042ae5-20"
-                },
-                {
-                    "title": "Quiet",
-                    "authors": "Susan Cain",
-                    "link": "https://read.amazon.com/kp/embed?asin=B004J4WNL2&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_SKWJFb4DT17XJ&tag=mobilea042ae5-20"
-                },
-                {
-                    "title": "Sapiens",
-                    "authors": "Yuval Noah Harari",
-                    "link": "https://read.amazon.com/kp/embed?asin=B00ICN066A&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_TKWJFbT218Y2E&tag=mobilea042ae5-20"
-                },
-                {
-                    "title": "The Sun Does Shine",
-                    "authors": "Anthony Ray Hinton",
-                    "link": "https://read.amazon.com/kp/embed?asin=B075DDDYHG&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_1KWJFbF9CNKCY&tag=mobilea042ae5-20"
+                    "authors": "David Allen"
                 }
             ]
-        },
-        {
-            "tag": "Code",
-            "column": 2,
-            "image": "developer.jpg",
-            "credit": "JuliAnne Jonker",
-            "creditLink": "https://www.juliannejonker.com/"
-        },
-        {
-            "tag": "Music",
-            "column": 2,
-            "image": "music.jpg",
-            "credit": "Daniel Brakke",
-            "creditLink": "https://www.linkedin.com/in/daniel-brakke-02429b165/"
-        },
-        {
-            "title": "What is this?",
-            "column": 2,
-            "tag": "Blog?",
-            "date": "2019.04.09",
-            "paragraph": "I have recently started tracking some behaviors that I would like to establish as habits. I am using an app called Streaks and have daily and weekly habits. One of my weekly habits is to 'Get an idea out' which means taking an idea from my list of ideas that I have been accumulating over the years and put it into the world in some way. Sometimes this means creating a project on Github with some basic functionality, but other ideas are more abstract so I need a platform for releasing those ideas. This will be that platform for now.",
-            "items": []
-        },
-        {
-            "title": "Hmmm...",
-            "column": 2,
-            "tag": "Blog?",
-            "date": "2020.08.17",
-            "paragraph": "I forgot about this...",
-            "items": []
         }
     ]
 }
