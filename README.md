@@ -32,7 +32,7 @@ Photo by Juhasz Imre from Pexels
 
 In the project directory, you can run:
 
-`npm start`
+`yarn start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -58,11 +58,10 @@ How this project was created
 ```
 npx create-react-app portfolio
 yarn add react-ga
-yarn add node-sass
 yarn add bulma
 
-npm i --save @fortawesome/fontawesome-svg-core \
-  npm i --save @fortawesome/free-solid-svg-icons \
-  npm i --save @fortawesome/react-fontawesome
+yarn add --save @fortawesome/fontawesome-svg-core \
+  yarn add --save @fortawesome/free-solid-svg-icons \
+  yarn add --save @fortawesome/react-fontawesome
 ```
 renamed portfolio to porte
