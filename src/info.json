@@ -4,60 +4,65 @@
     "location": "Minneapolis, MN",
     "github": "sunfarm",
     "twitter": "nathanaelraway",
-    "bio": "I am a programmer, techy, musician, armchair philosopher. I like to put great espresso, delicious food and cocktails in my face and audiobooks and Japanese in my brain. I have a very energetic lab-mix named Bailey and a new puppy named Coen who has a lot of skin to grow into. My wife and I are re-watching The Office and It's Always Sunny in Philadelphia together... again.",
+    "bio": "I am a programmer, general tech enthusiast and audio/visual artist living in Minneapolis. My perfect day is breakfast at [Honey & Rye](https://www.honey-and-rye.com/), lunch at [Café Cerés](https://www.cafeceresmpls.com/) and dinner at [Colita](https://www.colitampls.com/).",
     "tags": [
-        "Programmer",
-        "Musician",
-        "Human",
-        "Blog?"
+        "Code",
+        "Music",
+        "Self"
     ],
     "boxes": [
         {
             "title": "Albums",
-            "tag": "Musician",
-            "paragraph": "I played synth on these albums",
+            "tag": "Music",
+            "paragraph": "I played synth on these tracks/albums",
             "items": [
+                "[Always Straight Ahead - Perspectives](https://open.spotify.com/track/6A70S5kbcy1oOFofSZj5vD?si=121d3c7ce6cf4206)",
                 "[Cedar - Human Nature](https://open.spotify.com/album/1qMkBz1hAvTh9xwx73qD28?si=jlJs2uz1Q7Gpqt9s58b3SQ)",
                 "[Cedar - Siren](https://open.spotify.com/album/4tMevI7WCPw8LHmAKCDpTl?si=Vvv8BgTBRdKNB7Um2lyPLQ)"
             ]
         },
         {
             "title": "Jams",
-            "tag": "Musician",
+            "tag": "Music",
             "paragraph": "These are my jams right now",
             "items": [
-                "[Washed Out - Purple Noon](https://open.spotify.com/album/0gkOhkjdFwKUtz9YXbp22L?si=C8VYCH5vT5qdBlGfODMkSQ)"
+                "[Tourist - Inside Out](https://open.spotify.com/album/5VSjUsRU41obhoHo0ghMO0?si=0zpBjjPgT5a8CP9t7aTVSw)",
+                "[Chrome Sparks](https://open.spotify.com/album/5Y0yPA0zZetcpimqsegK1i?si=UrbzryPwRL2QVWR_TeOpsg)",
+                "[MUNA](https://open.spotify.com/album/4ndTvTrNwgUfRw4g1R2B4l?si=2aaQsmTDSTiNvRhMb63mxg)",
+                "[Max Cooper - Unspoken Words](https://open.spotify.com/album/5JuO2GgzgGLrF1Kz0l82Qk?si=0zsFWIr1Tlazd72xEWjTNA)"
             ]
         },
         {
             "title": "Skills",
-            "tag": "Programmer",
+            "tag": "Code",
             "paragraph": "I know about these things",
             "items": [
-                "JavaScript / TypeScript / JQuery / React / Redux / AngularJS / Angular",
-                "PHP / Symfony / Yii",
+                "JavaScript / TypeScript / JQuery / React / Redux / AngularJS / Angular / VueJS",
+                "PHP / Symfony / Yii / Craft CMS / Wordpress",
                 "C# / .NET / .NET Core / Entity Framework",
-                "Python / Flask / Django",
+                "Python / NumPy / Pandas / SQLAlchemy / Flask / Django",
                 "BASH / Make / Lua",
-                "MySQL / Redis",
+                "MySQL / PostgreSQL / Redis",
                 "AWS / Docker / Flynn / Ansible",
-                "MacOS / Windows / Linux / iTerm / Git / Vim",
+                "Gitlab Pipelines / Terraform",
+                "MacOS / Windows / Linux / iTerm",
+                "Git / tmux / VS Code / Vim / Jetbrains / Keyboard Maestro",
                 "Blender / Photoshop / Premier",
-                "Ableton Live"
+                "Ableton Live / Max/MSP"
             ]
         },
         {
             "title": "Tools",
-            "tag": "Programmer",
+            "tag": "Code",
             "paragraph": "I use these tools to get things done",
             "items": [
-                "Macbook Pro 16\"",
+                "Macbook Pro 16\" M1 Max",
                 "Things 3 - Inbox/todo list",
                 "Notion - Note-taking",
                 "Rectangle - To move windows with my keyboard",
                 "Keyboard Maestro - Text replacement, OS automation",
                 "Visual Studio Code - Text editor",
-                "JetBrains PhpStorm - Because IDEs are great sometimes",
+                "JetBrains - Because IDEs are great sometimes",
                 "Docker - Containers, containers",
                 "Git - here's my [git config file](https://gist.github.com/sunfarm/1856087ce8add0bc0cd65d17d7101f21)",
                 "tmux/tmuxilator - Automated development context"
@@ -81,13 +86,13 @@
             ]
         },
         {
-            "tag": "Human",
+            "tag": "Self",
             "column": 2,
             "image": "dogs.jpg"
         },
         {
             "title": "Books",
-            "tag": "Human",
+            "tag": "Self",
             "paragraph": "I highly recommend these books for the wisdom or knowledge they impart or for the thoughts they provoke. These are all available as audiobooks because that's how I roll for anything non-technical.",
             "items": [
                 {
@@ -143,14 +148,14 @@
             ]
         },
         {
-            "tag": "Programmer",
+            "tag": "Code",
             "column": 2,
             "image": "developer.jpg",
             "credit": "JuliAnne Jonker",
             "creditLink": "https://www.juliannejonker.com/"
         },
         {
-            "tag": "Musician",
+            "tag": "Music",
             "column": 2,
             "image": "music.jpg",
             "credit": "Daniel Brakke",
