@@ -114,7 +114,7 @@ class App extends Component {
                     </a>
                     : ''}
                   {info.instagram ?
-                    <a className="icon" href={'https://instagram.com/' + info.twitter}>
+                    <a className="icon" href={'https://instagram.com/' + info.instagram}>
                       <img src={faInstagram} alt="Instagram" />
                     </a>
                     : ''}
